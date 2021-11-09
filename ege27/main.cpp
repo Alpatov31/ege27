@@ -1,10 +1,10 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 void number_of_products_div() /// number of products dividable by smth
 {
-    cout << "Hello, world!" << endl;
     /**
     1. считать и запомнить числа
     2. вывести все пары чисел
@@ -13,11 +13,20 @@ void number_of_products_div() /// number of products dividable by smth
     5. посчитать и вывести количество
         подходящих произведений
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
+    for (int i(0); i<n; i++)
+        cout << numbers[i] << " ";
+
+
 }
 
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    number_of_products_div();
     return 0;
 }
