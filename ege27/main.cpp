@@ -9,7 +9,7 @@ void max_sum_div()
     /**
     + 1. считать и сохранить все числа
     + 2. найти максимальное четное и максимальное нечетное число
-    3. найти их сумму
+    + 3. найти их сумму
     4. вывести наибольшую нечетную сумму
     */
     int n(0);
@@ -25,6 +25,7 @@ void max_sum_div()
             max_odd = numbers[i];
         else if (numbers[i] % 2 == 0 and numbers[i] > max_even)
             max_even = numbers[i];
+    max_sum = max_odd + max_even
 }
 
 int main()
