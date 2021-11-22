@@ -27,6 +27,7 @@ void number_sums_div_ineff_2()
             if (numbers[i] > 40 or numbers[j] > 40)
                 kol++;
     }
+    cout << kol << endl;
 }
 
 int main()
