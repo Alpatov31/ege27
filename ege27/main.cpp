@@ -21,12 +21,16 @@ void max_sum_div()
     vector<int> numbers(n);
     for (int i(0); i<n; i++)
         ifs >> numbers[i];
-    cout << endl;
-    for (int i(0); i<n-1; i++){
+
+    int max_sum(0);
+    for (int i(0); i<n-1; i++)
     for (int j(i+1); j<n; j++)
-        if ((numbers[i] + numbers[j]) % 2 != 0)
-            cout << numbers[i] + numbers[j] << endl;
+    {
+        int cur_sum(numbers[i] + numbers[j]);
+        if (cur_sum % 2 != 0 and cur_sum > max_sum)
+            max_sum = cur_sum;
     }
+    cout << max_sum << endl;
 }
 
 int main()
