@@ -15,8 +15,13 @@ void number_sums_div_eff_2()
     int n(0);
     cin >> n;
     vector<int> numbers(n);
-    for (int i(0); i<n; i++)
+    vector<int> qttys_by_mod_40(40, 0);
+    for (int i(0); i<n; i++){
         cin >> numbers[i];
+        qttys_by_mod_40[numbers[i]%40]++;}
+    for (int i(0); i<qttys_by_mod_40.size(); i++){
+        cout << i << ":" << qttys_by_mod_40[i] << endl;
+        }
 
 }
 
