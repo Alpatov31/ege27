@@ -9,7 +9,7 @@ void min_sum_distance()
     + 1. считать числа
     + 2. вывести пары
     + 3. вывести пары с минимальным расстоянием
-    4. вместо вывода пары посчитать сумму
+    + 4. вместо вывода пары посчитать сумму
     5. найти минимум среди сумм
     */
     int n(0);
@@ -20,7 +20,7 @@ void min_sum_distance()
     for (int i(0); i<n-1; i++)
         for (int j(i+1); j < n; j++)
             if (i-j >= 4 or j-i >= 4)
-                cout << numbers[i] << " " << numbers[j] << endl;
+                cout << numbers[i] + numbers[j] << endl;
 }
 
 int main()
