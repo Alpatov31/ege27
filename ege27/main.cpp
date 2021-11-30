@@ -17,11 +17,13 @@ void min_sum_distance_EFF()
     */
     int n(0);
     cin >> n;
-    int min_num(0);
+    int min_num(1000);
     int min_sum(0);
     vector<int> numbers(4);
     for (int i(0); i < 4; i++)
         cin >> numbers[i];
+    if (numbers[0] < min_num)
+        min_num = numbers[0]
 }
 
 int main()
