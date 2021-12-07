@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <math.h>
 
 using namespace std;
 
@@ -8,7 +9,7 @@ void kol_sum_ineff()
     /**
     + 1. считать все числа
     + 2. вывести все пары
-    3. найти все пары, у которых разница инедксов равна 6
+    + 3. найти все пары, у которых разница инедксов меньше 6
     4. найти все пары, сумма которых кратна 25, и посчитать их кол-во
     5. вывести итоговое кол-во
     */
@@ -20,7 +21,8 @@ void kol_sum_ineff()
         cin >> numbers[i];
     for (int i(0); i<n-1; i++){
     for (int j(i+1); j<n; j++)
-        cout << numbers[i] << " " << numbers[j] << endl;
+        if (abs(i - j) < 6)
+            cout << numbers[i] << " " << numbers[j] << endl;
     }
 }
 
