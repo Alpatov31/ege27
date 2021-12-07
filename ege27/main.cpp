@@ -18,6 +18,10 @@ void kol_sum_eff()
     vector<int> numbers(6);
     for (int i(0); i < 6; i++)
         cin >> numbers[i];
+    for (int i(0); i < 6; i++){
+        for (int j(i+1); j < 6; j++)
+            cout << numbers[i] << " " << numbers[j] << endl;
+    }
 
 }
 
