@@ -6,10 +6,15 @@ using namespace std;
 void b()
 {
     /**
-    1. считать все числа
+    +1. считать все числа
     2. заполнить вектор остатками элементов
     3. посчитать итоговое количество троек
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
 }
 
 int main()
