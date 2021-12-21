@@ -18,8 +18,10 @@ void a()
     vector<int> numbers(n);
     for (int i(0); i < n; i++)
         cin >> numbers[i];
-
-
+    for (int i(0); i < n; i++)
+        for (int j(i+1); j < n; j++)
+            for (int z(j+1); z < n; z++)
+                cout << numbers[i] << " " << numbers[j] << " " << numbers[z] << endl;
 
 
 }
