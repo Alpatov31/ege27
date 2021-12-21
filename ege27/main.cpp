@@ -8,8 +8,8 @@ void a()
 {
 
     /**
-    1. считать все числа
-    2. вывести все тройки
+    +1. считать все числа
+    +2. вывести все тройки
     3. посчитать сумму троек и проверить на кратность 4
     4. посчитать количество
     */
@@ -21,7 +21,9 @@ void a()
     for (int i(0); i < n; i++)
         for (int j(i+1); j < n; j++)
             for (int z(j+1); z < n; z++)
-                cout << numbers[i] << " " << numbers[j] << " " << numbers[z] << endl;
+                if ((numbers[i] + numbers[j] + numbers[z]) % 4 == 0)
+                    cout << numbers[i] << " " << numbers[j] << " " << numbers[z] << endl;
+
 
 
 }
