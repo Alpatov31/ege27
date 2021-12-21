@@ -10,10 +10,11 @@ void a()
     /**
     +1. считать все числа
     +2. вывести все тройки
-    3. посчитать сумму троек и проверить на кратность 4
+    +3. посчитать сумму троек и проверить на кратность 4
     4. посчитать количество
     */
     int n(0);
+    int k(0);
     cin >> n;
     vector<int> numbers(n);
     for (int i(0); i < n; i++)
@@ -22,10 +23,8 @@ void a()
         for (int j(i+1); j < n; j++)
             for (int z(j+1); z < n; z++)
                 if ((numbers[i] + numbers[j] + numbers[z]) % 4 == 0)
-                    cout << numbers[i] << " " << numbers[j] << " " << numbers[z] << endl;
-
-
-
+                    k++;
+        cout << k << endl;
 }
 
 int main()
